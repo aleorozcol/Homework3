@@ -4,9 +4,9 @@
 
 float MedicionBase::getTiempo() const {
     if (tiempoMedicion){
-        return *tiempoMedicion;
+        return *tiempoMedicion; // devuelve float
     }
-    return 0.0f;
+    return 0.0f; // en caso de que sea nullptr
 }
 
 void MedicionBase::serializar(ofstream& out) const {
