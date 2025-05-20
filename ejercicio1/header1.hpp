@@ -18,7 +18,7 @@ class MedicionBase : public IMediciones {
         unique_ptr<float> tiempoMedicion;
     public:
         MedicionBase(float t) : tiempoMedicion(make_unique<float>(t)) {}
-        // como no se puede usar move, hacemos una deep copy , se puede??
+        // como no se puede usar move, hacemos deep copy
         MedicionBase(const MedicionBase& other){ // constructor de copia
             if (other.tiempoMedicion) {
                 tiempoMedicion = make_unique<float>(*other.tiempoMedicion);

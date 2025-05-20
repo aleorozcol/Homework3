@@ -78,8 +78,6 @@ class ProcesadorFigura{
         }
 };
 
-//creo un template especializado para el punto o lo dejo con el genérico?
-
 //Template especializado para círculo
 template<>
 class ProcesadorFigura<Circulo> {
