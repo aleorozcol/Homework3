@@ -19,4 +19,6 @@ int main() {
     constructor.addCampo("palabras", vecStrings.procesarDatos());
     constructor.addCampo("listas", vecListas.procesarDatos());
     constructor.construir();
+
+    return 0;
 }
