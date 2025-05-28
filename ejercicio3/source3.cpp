@@ -17,19 +17,23 @@ string Procesador<T>::procesarDatos() const {
     for (size_t i = 0; i < datos.size(); ++i) {
         if constexpr (is_same_v<T, double>) {
             oss << datos[i];
+            if (i + 1 < datos.size()) oss << ", ";
         } else if constexpr (is_same_v<T, string>) {
             oss << '"' << datos[i] << '"';
+            if (i + 1 < datos.size()) oss << ", ";
         } else if constexpr (is_same_v<T, vector<int>>) {
-            oss << "[";
+            oss << "\n\t[";
             for (size_t j = 0; j < datos[i].size(); ++j) {
                 oss << datos[i][j];
-                if (j + 1 < datos[i].size())
-                    oss << ", ";
+                if (j + 1 < datos[i].size()) oss << ", ";
             }
             oss << "]";
+            if (i + 1 < datos.size()){
+                oss << ", ";
+            } else {
+                oss << "\n\t";
+            }
         }
-        if (i + 1 < datos.size())
-            oss << ", ";
     }
     oss << "]";
     return oss.str();
