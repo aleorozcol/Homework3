@@ -1,4 +1,8 @@
-#include "header2.hpp"
+#include "../header2/Circulo.hpp"
+#include "../header2/Elipse.hpp"
+#include "../header2/ProcesadorFigura.hpp"
+#include "../header2/Punto.hpp"
+#include "../header2/Rectangulo.hpp"
 
 int main() {
     Punto centro1(0.0f, 0.0f);
