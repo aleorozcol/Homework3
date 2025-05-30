@@ -1,9 +1,9 @@
 # Homework3
 
-Compilador de cada ejercicio:
+Para compilar cada ejercicio hay que ubicarse en el directorio correspondiente y correr el siguiente comando:
 
-Ejercicio 1: g++ -g -Wall -o ejercicio1 main1.cpp source1.cpp
+Ejercicio 1: make ejercicio1
 
-Ejercicio 2: g++ -g -Wall -o ejercicio2 main2.cpp source2.cpp
+Ejercicio 2: make ejercicio2
 
-Ejercicio 3: g++ -g -Wall -o ejercicio3 main3.cpp source3.cpp
+Ejercicio 3: make ejercicio3
