@@ -1,4 +1,8 @@
-#include "header1.hpp"
+#include "../header1/IMediciones.hpp"
+#include "../header1/MedicionBase.hpp"
+#include "../header1/Posicion.hpp"
+#include "../header1/Presion.hpp"
+#include "../header1/SaveFlightData.hpp"
 
 int main() {
     Posicion posicion(-34.6f, -58.4f, 950.0f, 5.3f);
