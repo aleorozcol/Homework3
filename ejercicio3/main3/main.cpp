@@ -1,4 +1,5 @@
-#include "header3.hpp"
+#include "../header3/Constructor.hpp"
+#include "../header3/Procesador.hpp"
 
 int main() {
     Procesador<double> vecDoubles;
